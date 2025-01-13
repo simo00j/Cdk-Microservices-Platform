@@ -1,0 +1,5 @@
+pytest==6.2.5
+pre-commit==3.6.2
+pre-commit-hooks==4.5.0
+mypy==1.8.0
+ruff==0.2.2

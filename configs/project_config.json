@@ -1,0 +1,27 @@
+{
+  "projects": [
+    {
+      "name": "biodiversity",
+      "deployments": [
+        {
+          "deployment_name": "OBVNA_SCRAPPER",
+          "ram": 2,
+          "cpu": 1,
+          "disk": 20,
+          "type": "task",
+          "image": "767397683147.dkr.ecr.eu-west-1.amazonaws.com/biodiversity-repository:1e4b9fb75cf2504eef5cf2e1b11638ca4dcb4dd5",
+          "env_vars":{
+            "SCRAPPER": "OBVNA"
+          },
+          "secrets":{
+            "DB_URI" : "DB_RAW_DATA_URI"
+          }
+        }
+      ],
+      "database":
+        {
+          "name": "biodiv",
+          "storage": 60
+        }
+    }]
+}
